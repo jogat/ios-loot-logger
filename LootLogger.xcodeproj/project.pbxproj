@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		CA37669D2734C245008C28CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37669C2734C245008C28CA /* AppDelegate.swift */; };
 		CA37669F2734C245008C28CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37669E2734C245008C28CA /* SceneDelegate.swift */; };
-		CA3766A12734C245008C28CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3766A02734C245008C28CA /* ViewController.swift */; };
 		CA3766A42734C245008C28CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3766A22734C245008C28CA /* Main.storyboard */; };
 		CA3766A62734C247008C28CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3766A52734C247008C28CA /* Assets.xcassets */; };
 		CA3766A92734C247008C28CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3766A72734C247008C28CA /* LaunchScreen.storyboard */; };
 		CA3766B42734C247008C28CA /* LootLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3766B32734C247008C28CA /* LootLoggerTests.swift */; };
 		CA3766BE2734C247008C28CA /* LootLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3766BD2734C247008C28CA /* LootLoggerUITests.swift */; };
 		CA3766C02734C247008C28CA /* LootLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3766BF2734C247008C28CA /* LootLoggerUITestsLaunchTests.swift */; };
+		CA3766CD2734C38C008C28CA /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3766CC2734C38C008C28CA /* ItemsViewController.swift */; };
+		CA3766CF2734C474008C28CA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3766CE2734C474008C28CA /* Item.swift */; };
+		CA3766D12734CEFA008C28CA /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3766D02734CEFA008C28CA /* ItemStore.swift */; };
+		CA418122273B6FCB0045B46E /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA418121273B6FCB0045B46E /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		CA3766992734C245008C28CA /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA37669C2734C245008C28CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA37669E2734C245008C28CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA3766A02734C245008C28CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA3766A32734C245008C28CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA3766A52734C247008C28CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA3766A82734C247008C28CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		CA3766B92734C247008C28CA /* LootLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LootLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3766BD2734C247008C28CA /* LootLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITests.swift; sourceTree = "<group>"; };
 		CA3766BF2734C247008C28CA /* LootLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA3766CC2734C38C008C28CA /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		CA3766CE2734C474008C28CA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CA3766D02734CEFA008C28CA /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		CA418121273B6FCB0045B46E /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 			children = (
 				CA37669C2734C245008C28CA /* AppDelegate.swift */,
 				CA37669E2734C245008C28CA /* SceneDelegate.swift */,
-				CA3766A02734C245008C28CA /* ViewController.swift */,
 				CA3766A22734C245008C28CA /* Main.storyboard */,
 				CA3766A52734C247008C28CA /* Assets.xcassets */,
 				CA3766A72734C247008C28CA /* LaunchScreen.storyboard */,
 				CA3766AA2734C247008C28CA /* Info.plist */,
+				CA3766CC2734C38C008C28CA /* ItemsViewController.swift */,
+				CA3766CE2734C474008C28CA /* Item.swift */,
+				CA3766D02734CEFA008C28CA /* ItemStore.swift */,
+				CA418121273B6FCB0045B46E /* ItemCell.swift */,
 			);
 			path = LootLogger;
 			sourceTree = "<group>";
@@ -258,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3766A12734C245008C28CA /* ViewController.swift in Sources */,
+				CA3766CF2734C474008C28CA /* Item.swift in Sources */,
+				CA3766CD2734C38C008C28CA /* ItemsViewController.swift in Sources */,
+				CA418122273B6FCB0045B46E /* ItemCell.swift in Sources */,
 				CA37669D2734C245008C28CA /* AppDelegate.swift in Sources */,
+				CA3766D12734CEFA008C28CA /* ItemStore.swift in Sources */,
 				CA37669F2734C245008C28CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
