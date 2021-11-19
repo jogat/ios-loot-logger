@@ -40,6 +40,19 @@ class ItemsViewController: UITableViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showItem":
+            if let row = tableView.indexPathForSelectedRow?.row{
+                let item = itemsStore.allItems[row]
+                let detailController = segue.destination as! DetailViewController
+                detailController.item = item
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier")
+        }
+    }
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemsStore.allItems.count

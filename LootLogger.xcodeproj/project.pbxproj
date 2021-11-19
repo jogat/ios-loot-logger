@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA2E9F3727474093002119F9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2E9F3627474093002119F9 /* DetailViewController.swift */; };
 		CA37669D2734C245008C28CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37669C2734C245008C28CA /* AppDelegate.swift */; };
 		CA37669F2734C245008C28CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37669E2734C245008C28CA /* SceneDelegate.swift */; };
 		CA3766A42734C245008C28CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3766A22734C245008C28CA /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA2E9F3627474093002119F9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CA3766992734C245008C28CA /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA37669C2734C245008C28CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA37669E2734C245008C28CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				CA3766CE2734C474008C28CA /* Item.swift */,
 				CA3766D02734CEFA008C28CA /* ItemStore.swift */,
 				CA418121273B6FCB0045B46E /* ItemCell.swift */,
+				CA2E9F3627474093002119F9 /* DetailViewController.swift */,
 			);
 			path = LootLogger;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				CA37669D2734C245008C28CA /* AppDelegate.swift in Sources */,
 				CA3766D12734CEFA008C28CA /* ItemStore.swift in Sources */,
 				CA37669F2734C245008C28CA /* SceneDelegate.swift in Sources */,
+				CA2E9F3727474093002119F9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
